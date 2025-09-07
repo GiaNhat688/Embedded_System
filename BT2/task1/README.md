@@ -41,13 +41,14 @@
 + Tắt cả hai chân (LED tắt), delay 1 giây, rồi lặp lại
  
 **C. Kết luận:**
-Chương trình đã cấu hình thành công GPIOA pin 2 (PA2) và GPIOB pin 0 (PB0) ở chế độ Output push-pull, 2 MHz bằng cách bật clock và thiết lập thanh ghi CRL.
 
-Trong vòng lặp vô hạn while(1), hai chân được đưa mức cao (1) → LED sáng, sau đó đưa mức thấp (0) → LED tắt, với khoảng trễ 1000ms giữa hai trạng thái.
+- Chương trình đã cấu hình thành công GPIOA pin 2 (PA2) và GPIOB pin 0 (PB0) ở chế độ Output push-pull, 2 MHz bằng cách bật clock và thiết lập thanh ghi CRL.
 
-Kết quả: hai LED nối với PA2 và PB0 sẽ sáng cùng lúc trong 1 giây, tắt cùng lúc trong 1 giây, và lặp lại liên tục.
+- Trong vòng lặp vô hạn while(1), hai chân được đưa mức cao (1) → LED sáng, sau đó đưa mức thấp (0) → LED tắt, với khoảng trễ 1000ms giữa hai trạng thái.
 
-Hạn chế: Độ trễ có thể không hoàn toàn chính xác do hàm for không tối ưu và khả năng đáp ứng từ phần cứng như máy tính, complier, vi điều khiển, led, dây dẫn, điện trở, và môi trường
+- Kết quả: hai LED nối với PA2 và PB0 sẽ sáng cùng lúc trong 1 giây, tắt cùng lúc trong 1 giây, và lặp lại liên tục.
+
+- Hạn chế: Độ trễ có thể không hoàn toàn chính xác do hàm for không tối ưu và khả năng đáp ứng từ phần cứng như máy tính, complier, vi điều khiển, led, dây dẫn, điện trở, và môi trường
 
 
 
