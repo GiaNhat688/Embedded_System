@@ -1,6 +1,6 @@
-**CẤU HÌNH 2 NHÓM LED Ở CHẾ ĐỘ OUTPUT, LED SẼ NHẤP NHÁY VỚI CHU KỲ 1000MS
+****CẤU HÌNH 2 NHÓM LED Ở CHẾ ĐỘ OUTPUT, LED SẼ NHẤP NHÁY VỚI CHU KỲ 1000MS**
  
-Chương trình sử dụng các chân GPIO ở 2 cổng A và B trên STM32F103C8T6 để điều khiển led nhấp nháy**
+**Chương trình sử dụng các chân GPIO ở 2 cổng A và B trên STM32F103C8T6 để điều khiển led nhấp nháy****
 
 **Cụ thể:**
 - Phần cứng: Sử dụng PA2 - led xanh lá, PB0 -  led vàng, 2 điện trở 220R hạn dòng, các dây nối từ pin đến led
