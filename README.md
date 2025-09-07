@@ -1,8 +1,8 @@
 NHÓM 8 
 
-Tạ Gia Nhất(B22DCDT215) - Nhóm trưởng
+Tạ Gia Nhất (B22DCDT215) - Nhóm trưởng
 
-Vũ Văn Khải(B22DCDT164) - Thành viên
+Vũ Văn Khải (B22DCDT164) - Thành viên
 
 Dương Minh Phú (B22DCDT227) - Thành viên
 
