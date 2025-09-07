@@ -1,7 +1,7 @@
 #include "stm32f10x.h"  
 
 void GPIO_Config(){
-		RCC->APB2ENR |= (1 << 4);   
+	RCC->APB2ENR |= (1 << 4);   
     GPIOC->CRH &= ~(0xF << 20); 
     GPIOC->CRH |=  (0x2 << 20);  
     GPIOC->CRH |=  (0x0 << 22);  
