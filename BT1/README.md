@@ -19,15 +19,15 @@
 - Led PC13 trên BluePill thuộc nhóm low-drive pin nên ta sẽ thiết kế led PC13 nối về GND, có nghĩa là led sáng khi ghi 0 và led tắt khi ghi 1
 ***Cách thực hiện:**
 
-Bước 1: Bật Clock cho PortC và cấu hình PC13
+1. Bật Clock cho PortC và cấu hình PC13
 
 <img width="261" height="128" alt="image" src="https://github.com/user-attachments/assets/8c9c8240-189b-4964-b37b-213959c388cb" />
 
-Bước 2: Tạo hàm delay đơn giản để có hiệu ứng nhấp nháy
+2. Tạo hàm delay đơn giản để có hiệu ứng nhấp nháy
 
 <img width="274" height="182" alt="image" src="https://github.com/user-attachments/assets/118b62c4-7ba2-44a3-8118-444f376478be" />
 
-Bước 3: Tạo hàm main để thực thi chương trình với độ trễ 500ms
+3. Tạo hàm main để thực thi chương trình với độ trễ 500ms
 
 <img width="274" height="182" alt="image" src="https://github.com/user-attachments/assets/893f1c8f-41e2-4147-85b1-ae163b769ee6" />
 
