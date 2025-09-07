@@ -18,6 +18,7 @@ A. CÁCH TẠO VÀ CẤU HÌNH PROJECT SỬ DỤNG STM32F103C8T6 TRÊN KEILC
 B. NHẤP NHÁY LED PC13:
 - Led PC13 trên BluePill thuộc nhóm low-drive pin nên ta sẽ thiết kế led PC13 nối về GND, có nghĩa là led sáng khi ghi 0 và led tắt khi ghi 1
 *Cách thực hiện:
+
 Bước 1: Bật Clock cho PortC và cấu hình PC13
 
 <img width="261" height="128" alt="image" src="https://github.com/user-attachments/assets/8c9c8240-189b-4964-b37b-213959c388cb" />
