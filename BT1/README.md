@@ -31,7 +31,10 @@
 
 <img width="274" height="182" alt="image" src="https://github.com/user-attachments/assets/893f1c8f-41e2-4147-85b1-ae163b769ee6" />
 
-
+**C. KẾT LUẬN:**
+- Cài đặt và cấu hình thành công STM32F103C8T6 sử dụng KeilC
+- Chương trình chạy tốt biểu hiện cho vi điều khiển hoạt động bình thường không vấn đề
+  
 
 
 
