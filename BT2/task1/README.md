@@ -2,7 +2,7 @@
  
 **Chương trình sử dụng các chân GPIO ở 2 cổng A và B trên STM32F103C8T6 để điều khiển led nhấp nháy**
 
-**Cụ thể:**
+**Cụ thể:** 
 - Phần cứng: Sử dụng PA2 - led xanh lá, PB0 -  led vàng, 2 điện trở 220R hạn dòng, các dây nối từ pin đến led
 - Kết quả:
 Ban đầu 2 led sáng cùng lúc
