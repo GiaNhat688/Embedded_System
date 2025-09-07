@@ -20,8 +20,10 @@ B. NHẤP NHÁY LED PC13:
 *Cách thực hiện:
 Bước 1: Bật Clock cho PortC và cấu hình PC13
 <img width="261" height="128" alt="image" src="https://github.com/user-attachments/assets/8c9c8240-189b-4964-b37b-213959c388cb" />
+
 Bước 2: Tạo hàm delay đơn giản để có hiệu ứng nhấp nháy
 <img width="274" height="182" alt="image" src="https://github.com/user-attachments/assets/118b62c4-7ba2-44a3-8118-444f376478be" />
+
 Bước 3: Tạo hàm main để thực thi chương trình với độ trễ 500ms
 ![Uploading image.png…]()
 
