@@ -11,6 +11,7 @@
 + Sau 1000ms thì 2 led đều tắt
 + Sau 1000ms tiếp thì 2 led lại sáng
 + Lặp lại liên tục
+
   
 --> 2 led sáng tắt liên tục cùng lúc
 
