@@ -1,6 +1,6 @@
-HỆ THỐNG NHÚNG
+**HỆ THỐNG NHÚNG**
 
-A. CÁCH TẠO VÀ CẤU HÌNH PROJECT SỬ DỤNG STM32F103C8T6 TRÊN KEILC
+**A. CÁCH TẠO VÀ CẤU HÌNH PROJECT SỬ DỤNG STM32F103C8T6 TRÊN KEILC**
 - Mở phần mềm KeilC
 - Vào Project -> New uVision Project
 - Chọn thư mục và đặt tên cho project
@@ -15,7 +15,7 @@ A. CÁCH TẠO VÀ CẤU HÌNH PROJECT SỬ DỤNG STM32F103C8T6 TRÊN KEILC
 - Nhấn Dowload(F8) để nạp chương trình vào vi điều khiển
 - Erase Done, Progamming Done, Verify OK, Application running là nạp thành công
 
-B. NHẤP NHÁY LED PC13:
+**B. NHẤP NHÁY LED PC13:**
 - Led PC13 trên BluePill thuộc nhóm low-drive pin nên ta sẽ thiết kế led PC13 nối về GND, có nghĩa là led sáng khi ghi 0 và led tắt khi ghi 1
 *Cách thực hiện:
 
