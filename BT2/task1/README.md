@@ -12,6 +12,7 @@
 --> 2 led sáng tắt liên tục cùng lúc
 
 **QUY TRÌNH THỰC HIỆN:**
+
 **1. Cấp Clock cho GPIOA và GPIOB và cấu hình cho 2 chân PA2 và PB0**
 
 <img width="308" height="166" alt="image" src="https://github.com/user-attachments/assets/d08b4256-2969-4e69-a07f-56f01cdc59d9" />
