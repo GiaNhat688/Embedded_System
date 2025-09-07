@@ -5,7 +5,7 @@ void GPIO_Config(){
     GPIOA->CRL &= ~(0xF<<8);   
     GPIOA->CRL |=  (0x2<<8);
 	
-		GPIOB->CRL &= ~(0xF<<0);  
+	GPIOB->CRL &= ~(0xF<<0);  
     GPIOB->CRL |=  (0x2<<0);
 }
 
@@ -15,7 +15,7 @@ void delay_ms(unsigned int t) {
 }
 
 int main(void) {
-		GPIO_Config();
+	GPIO_Config();
 	
     while (1) {
         GPIOA->ODR |= (1<<2);
