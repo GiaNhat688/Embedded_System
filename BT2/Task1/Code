@@ -1,0 +1,25 @@
+#include "stm32f10x.h"
+
+void GPIO_Config(){
+		RCC->APB2ENR |= (1<<2);
+    GPIOA->CRL &= ~((0xF<<8) | (0xF<<16));  
+    GPIOA->CRL |=  ((0x2<<8) | (0x2<<16)); 
+}
+
+void delay_ms(unsigned int t) {
+    for (unsigned int i = 0; i < t * 8000; i++) {
+        __asm("nop");
+    }
+}
+
+int main(void) {
+    GPIO_Config(); 
+
+    while (1) {
+        GPIOA->ODR |= (1<<2) | (1<<4);
+        delay_ms(1000);
+
+        GPIOA->ODR &= ~((1<<2) | (1<<4));
+        delay_ms(1000);
+    }
+}
