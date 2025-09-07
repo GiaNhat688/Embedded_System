@@ -1,6 +1,6 @@
 **CẤU HÌNH 2 NHÓM LED Ở CHẾ ĐỘ OUTPUT, LED SẼ NHẤP NHÁY VỚI CHU KỲ 1000MS**
  
-**Chương trình sử dụng các chân GPIO ở 2 cổng A và B trên STM32F103C8T6 để điều khiển led nhấp nháy**
+**A. Chương trình sử dụng các chân GPIO ở 2 cổng A và B trên STM32F103C8T6 để điều khiển led nhấp nháy**
 
 **Cụ thể:** 
 
@@ -15,7 +15,7 @@
   
 --> 2 led sáng tắt liên tục cùng lúc
 
-**QUY TRÌNH THỰC HIỆN:**
+**B. QUY TRÌNH THỰC HIỆN:**
 
 **1. Cấp Clock cho GPIOA và GPIOB và cấu hình cho 2 chân PA2 và PB0**
 
@@ -40,7 +40,14 @@
 + Bật PA2 và PB0 lên mức 1 (sáng LED), sau đó delay 1 giây
 + Tắt cả hai chân (LED tắt), delay 1 giây, rồi lặp lại
  
+**C. Kết luận:**
+Chương trình đã cấu hình thành công GPIOA pin 2 (PA2) và GPIOB pin 0 (PB0) ở chế độ Output push-pull, 2 MHz bằng cách bật clock và thiết lập thanh ghi CRL.
 
+Trong vòng lặp vô hạn while(1), hai chân được đưa mức cao (1) → LED sáng, sau đó đưa mức thấp (0) → LED tắt, với khoảng trễ 1000ms giữa hai trạng thái.
+
+Kết quả: hai LED nối với PA2 và PB0 sẽ sáng cùng lúc trong 1 giây, tắt cùng lúc trong 1 giây, và lặp lại liên tục.
+
+Hạn chế: Độ trễ có thể không hoàn toàn chính xác do hàm for không tối ưu và khả năng đáp ứng từ phần cứng như máy tính, complier, vi điều khiển, led, dây dẫn, điện trở, và môi trường
 
 
 
