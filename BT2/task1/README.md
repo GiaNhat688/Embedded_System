@@ -1,6 +1,6 @@
 **CẤU HÌNH 2 NHÓM LED Ở CHẾ ĐỘ OUTPUT, LED SẼ NHẤP NHÁY VỚI CHU KỲ 1000MS**
  
-**A. Chương trình sử dụng các chân GPIO ở 2 cổng A và B trên STM32F103C8T6 để điều khiển led nhấp nháy**
+**A. CHƯƠNG TRÌNH SỬ DỤNG CÁC CHÂN GPIO Ở 2 CỔNG A VÀ B TRÊN STM32F103C8T6 ĐỂ ĐIỀU KHIỂN LED NHẤP NHÁY**
 
 **Cụ thể:** 
 
