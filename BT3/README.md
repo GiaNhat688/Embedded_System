@@ -1,7 +1,8 @@
-                                                     **BÀI THỰC HÀNH**
-                                              **ĐIỀU KHIỂN NGẮT NGOÀI (EXTI)**
+  **BÀI THỰC HÀNH**
+  **ĐIỀU KHIỂN NGẮT NGOÀI (EXTI)**
 
 **A. CHƯƠNG TRÌNH ĐIỀU KHIỂN LED THAY ĐỔI TRẠNG THÁI BẰNG NÚT NHẤN SỬ DỤNG NGẮT NGOÀI TRONG KHI MỘT LED KHÁC VẪN NHẤP NHÁY VỚI CHU KỲ LÀ 1HZ**
+
 **1. Phần cứng:**
 - STM32F103C8T6 x1
 - Led đơn (xanh, vàng) x2
@@ -19,6 +20,7 @@
 - Trong quá trình đó 1 LED khác vẫn nhấp nháy với chu kỳ 1Hz
 
 **B. QUY TRÌNH THỰC HIỆN:**
+
 **1. Khởi tạo Timer2 để làm delay:**
 
 <img width="234" height="124" alt="image" src="https://github.com/user-attachments/assets/26d6f54c-ecc6-4c28-bf69-46024fc92b94" />
@@ -48,6 +50,7 @@
 - GPIOA->ODR ^= (1<<2); đảo trạng thái PA2 (LED)
 
 **4. Hàm thực thi main:**
+
 **a. Bật Clock cho AFIO, GPIOA, GPIOB:**
 
 <img width="401" height="48" alt="image" src="https://github.com/user-attachments/assets/e21fc81b-d649-4d19-8cb1-123a0d73609f" />
@@ -100,6 +103,7 @@
 - Vòng lặp: đảo PA5 mỗi 1000 ms → LED PA5 nháy 1Hz (thực tế 1s on, 1s off => 0.5 Hz toggles? Thường gọi blink 1Hz nghĩa đổi trạng thái mỗi 1s)
 
 **C. KẾT LUẬN:**
+
 **1. Đánh giá về kết quả đạt được:**
 - Chương trình đã hoàn thành yêu cầu cơ bản:
   - LED PA5 nhấp nháy với tần số ~1Hz (delay 1000ms)
@@ -108,6 +112,7 @@
 - Tuy nhiên vẫn còn hạn chế:
   - Hàm delay_ms() là blocking → chiếm CPU, không tận dụng được ưu thế ngắt và timer
   - Gọi delay_ms() trong ISR (ngắt EXTI) không an toàn, dễ gây xung đột và làm chậm xử lý
+ 
 **2. Hướng cải tiến:**
 - Không dùng delay trong ISR: ISR chỉ nên set cờ, xử lý debounce trong main hoặc bằng một timer riêng
 - Dùng timer ngắt thay cho delay để tạo nhịp LED nhấp nháy, giúp CPU rảnh làm việc khác
