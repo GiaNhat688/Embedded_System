@@ -9,6 +9,7 @@ void TIM2_IRQHandler(void) {
 
 void TIM2_Init(void) {
     RCC->APB1ENR |= (1 << 0);
+	
     TIM2->PSC = 7200 - 1;
     TIM2->ARR = 5000 - 1;
     TIM2->DIER |= (1 << 0);
