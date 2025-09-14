@@ -73,7 +73,7 @@
 <img width="144" height="84" alt="image" src="https://github.com/user-attachments/assets/becb6491-55fb-4b21-8352-7741da2d4690" />
 
 - TIM2_Init() khởi tạo và bật timer + ngắt
-- while (1) {} vòng lặp chính rỗng — CPU rảnh, mọi thứ điều khiển bởi ngắt TIM2
+- while (1) {} vòng lặp chính rỗng -> CPU rảnh, mọi thứ điều khiển bởi ngắt TIM2
 
 **C. KẾT LUẬN:**
 
