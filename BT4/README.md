@@ -54,7 +54,7 @@
 - TIM2->CR1 |= (1 << 0)
   - Bật counter (CEN) để timer bắt đầu chạy
 - NVIC_EnableIRQ(TIM2_IRQn)
-  -Cho phép ngắt TIM2 trong NVIC (bật đường ngắt ở CPU)
+  - Cho phép ngắt TIM2 trong NVIC (bật đường ngắt ở CPU)
 
 **3. Hàm thực thi Main:**
 
