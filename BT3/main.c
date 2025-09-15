@@ -2,6 +2,7 @@
 
 void TIM2_Init(void) {
     RCC->APB1ENR |= (1<<0);
+	
     TIM2->PSC = 7200 - 1;
     TIM2->ARR = 10 - 1;
     TIM2->CR1 |= (1<<0);
