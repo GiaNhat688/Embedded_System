@@ -2,6 +2,7 @@
 
 void TIM2_Init(void) {
     RCC->APB1ENR |= (1 << 0);
+    
     TIM2->PSC = 7200 - 1;
     TIM2->ARR = 10 - 1;
     TIM2->CR1  |= (1 << 0);
@@ -17,9 +18,12 @@ void delay_ms(uint32_t t) {
 
 int main(void) {
     RCC->APB2ENR |= (1 << 2);
+    
     GPIOA->CRL &= ~(0xF << 20);
     GPIOA->CRL |=  (0x2 << 20);
+    
     TIM2_Init();
+    
     while (1) {
         GPIOA->ODR ^= (1 << 5);
         delay_ms(500);
