@@ -16,6 +16,7 @@
 
 **3. Kết quả mong đợi:**
 - Hiển thị được chuỗi "Hello from STM32!" lên terminal trên ứng dụng Hercules
+- Bật/tắt led thông qua lệnh ON/OFF
 
 **B. QUY TRÌNH THỰC HIỆN:**
 
