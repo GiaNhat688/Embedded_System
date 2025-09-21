@@ -55,7 +55,6 @@ int main(void){
             buffer[2] = '\0';
             if(strcmp(buffer, "ON") == 0){
                 GPIOA->BSRR = (1<<0);
-                USART2_SendString("LED ON\r\n");
                 idx = 0;
                 continue;
             }
@@ -65,7 +64,6 @@ int main(void){
             buffer[3] = '\0';
             if(strcmp(buffer, "OFF") == 0){
                 GPIOA->BRR = (1<<0);
-                USART2_SendString("LED OFF\r\n");
                 idx = 0;
                 continue;
             }
