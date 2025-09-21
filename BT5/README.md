@@ -19,11 +19,9 @@
 
 **B. QUY TRÌNH THỰC HIỆN:**
 
-**1. Khai báo thư viện và cấu hình hàm delay bằng Timer2:**
+**1. Cấu hình chân :**
 
-<img width="267" height="285" alt="image" src="https://github.com/user-attachments/assets/04d13a94-d383-4753-add9-01aa03040b67" />
-
-- Tương tự như ở bài thực hành 4
+<img width="326" height="274" alt="image" src="https://github.com/user-attachments/assets/f1343a23-9f1c-481a-bebc-dd16b502cdd2" />
 
 **2. Cấu hình USART2:**
 
