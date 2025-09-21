@@ -1,4 +1,4 @@
-<img width="7164" height="238" alt="image" src="https://github.com/user-attachments/assets/75c54c04-fde0-4805-ae69-86585146aa1e" />**BÀI THỰC HÀNH 4**
+**BÀI THỰC HÀNH 4**
 
 **HẸN GIỜ BẰNG TIMER**
 
