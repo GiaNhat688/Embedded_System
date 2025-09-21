@@ -1,8 +1,8 @@
-**BÀI THỰC HÀNH 4**
+<img width="7164" height="238" alt="image" src="https://github.com/user-attachments/assets/75c54c04-fde0-4805-ae69-86585146aa1e" />**BÀI THỰC HÀNH 4**
 
 **HẸN GIỜ BẰNG TIMER**
 
-**A. CHƯƠNG TRÌNH  SỬ DỤNG STM32F103C8T6, LED LD2 (giả sử nối ở PA5) nhấp nháy bằng ngắt Timer2 với chu kỳ 1000ms (1Hz)**
+**A. CHƯƠNG TRÌNH  SỬ DỤNG STM32F103C8T6, LED LD2 (GIẢ SỬ NỐI Ở PA5) NHẤP NHÁY BẰNG NGẮT TIMER2 VỚI CHU KỲ 1000MS (1HZ)**
 
 **1. Phần cứng:**
 - STM32F103C8T6 x1
