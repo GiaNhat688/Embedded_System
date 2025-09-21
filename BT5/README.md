@@ -1,4 +1,4 @@
-<img width="388" height="162" alt="image" src="https://github.com/user-attachments/assets/e876e390-486f-4235-bbe6-3712494d1cbc" /><img width="311" height="84" alt="image" src="https://github.com/user-attachments/assets/2200c622-4fc1-4a50-9da0-cde17ca240bb" />**BÀI THỰC HÀNH 5**
+**BÀI THỰC HÀNH 5**
 
 **TRUYỀN THÔNG NỐI TIẾP USART**
 
