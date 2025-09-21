@@ -5,14 +5,14 @@ void GPIO_init(void){
     RCC->APB2ENR |= (1<<2);  
     RCC->APB1ENR |= (1<<17);  
 
-    GPIOA->CRL &= ~(0xF << (0*4));
-    GPIOA->CRL |=  (0x3 << (0*4));
+    GPIOA->CRL &= ~(0xF << 0);
+    GPIOA->CRL |=  (0x3 << 0);
 
-    GPIOA->CRL &= ~(0xF << (2*4));
-    GPIOA->CRL |=  (0xB << (2*4));
+    GPIOA->CRL &= ~(0xF << 8);
+    GPIOA->CRL |=  (0xB << 8);
 
-    GPIOA->CRL &= ~(0xF << (3*4));
-    GPIOA->CRL |=  (0x4 << (3*4));
+    GPIOA->CRL &= ~(0xF << 12);
+    GPIOA->CRL |=  (0x4 << 12);
 }
 
 void USART2_Init(uint32_t baud){
