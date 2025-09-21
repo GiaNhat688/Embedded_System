@@ -3,7 +3,6 @@
 
 #define DS1307_ADDR 0xD0   // 8-bit Write Address (0x68<<1)
 
-// ================= USART1 =================
 void USART1_Init(void){
     RCC->APB2ENR |= (1<<2);           // GPIOA
     RCC->APB2ENR |= (1<<14);          // USART1
@@ -33,7 +32,6 @@ void USART1_SendString(char *s){
     }
 }
 
-// ================= I2C1 =================
 void I2C1_Init(void){
     RCC->APB2ENR |= (1<<3);           // GPIOB
     RCC->APB1ENR |= (1<<21);          // I2C1
@@ -125,7 +123,6 @@ void I2C1_WriteReg(uint8_t devAddr, uint8_t regAddr, uint8_t val){
     I2C1_Stop();
 }
 
-// ================= DS1307 =================
 uint8_t BCD2DEC(uint8_t v){
 	//chuyen tu bcd->decimal
 	//0x12: v>>4=1 * 10 =10; v&0x0F=2 -> 12
@@ -153,7 +150,6 @@ void DS1307_GetTime(uint8_t *h, uint8_t *m, uint8_t *s){
     *h = BCD2DEC(I2C1_ReadReg(DS1307_ADDR, 0x02) & 0x3F); // mask 24h
 }
 
-// ================= MAIN =================
 int main(void){
     I2C1_Init();
     USART1_Init();
