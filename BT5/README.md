@@ -19,47 +19,37 @@
 
 **B. QUY TRÌNH THỰC HIỆN:**
 
-**1. Cấu hình chân :**
+**1. Cấu hình chân cho LED và USART:**
 
-<img width="326" height="274" alt="image" src="https://github.com/user-attachments/assets/f1343a23-9f1c-481a-bebc-dd16b502cdd2" />
+<img width="339" height="308" alt="image" src="https://github.com/user-attachments/assets/fa3b45fe-7fa8-49a2-8986-315fe9fba9e4" />
 
 **2. Cấu hình USART2:**
 
-<img width="255" height="271" alt="image" src="https://github.com/user-attachments/assets/7a0cbc02-727b-49a9-8bc1-706de9169ac2" />
+<img width="387" height="93" alt="image" src="https://github.com/user-attachments/assets/95ef6d43-db44-4140-9abf-78f844d2a893" />
 
-- Bật Clock cho GPIOA (sử dụng chân PA2-TX và PA3-RX) và USART2 để tương thích với 2 chân kia
-- Cấu hình PA2 (Transmiss) ở chế độ Alternate Function Push-Pull vì sử dụng ngoại vi USART với tốc độ 50MHZ
-- Cầu hình PA3 (Receive) ở chế độ Input with pull-up/pull-down với tốc độ là 50MHZ
 - Cấu hình Baud rate (Tốc độ truyền dữ liệu) là 9600 theo công thức tính toán dưới đây:
+
      <img width="486" height="74" alt="image" src="https://github.com/user-attachments/assets/5c21db1d-ad6b-47f7-b8a5-ad498cffcd72" />
 
 - Bật USART2, chức năng Transmitter và Receiver
 
-**3. Gửi từng ký tự:**
+**3. Gửi từng ký tự để tạo thành chuỗi**
 
-<img width="311" height="84" alt="image" src="https://github.com/user-attachments/assets/c6a16bff-6e53-4909-bb69-2ac8bd86f0e5" />
+<img width="306" height="185" alt="image" src="https://github.com/user-attachments/assets/d36627f1-5534-45e6-8092-f30bdefd8104" />
 
-- Để hiển thị được một chuỗi thì cần hiển thị từng ký tự trong chuỗi đó
-- Chờ cho đến khi thanh ghi TXE được set có nghĩa là dữ liệu trước đã được truyền đến shift register thì có thể thêm dữ liệu mới vào
-- Sau đó thêm ký tự mới từ chuỗi vào thanh ghi DR
+**4. Lấy ký tự để bật/tắt LED:**
 
-**4. Gửi chuỗi:**
-
-<img width="290" height="91" alt="image" src="https://github.com/user-attachments/assets/91b6b012-03b5-40da-846b-310400c2f93e" />
-
-- Lấy địa chỉ của từng ký tự trong chuỗi cho đến cuối chuỗi thì ta sẽ có được một chuỗi hoàn chỉnh
+<img width="291" height="92" alt="image" src="https://github.com/user-attachments/assets/af6d773c-6ebb-44ad-ba5c-324382a6d6b8" />
 
 **5. Thực thi chương trình:**
 
-<img width="388" height="162" alt="image" src="https://github.com/user-attachments/assets/caa1ef51-e0ed-4bd2-a798-f80812ef5d08" />
-
-- Gọi hàm cấu hình USART và TIM2 trước đó
-- Gửi chuỗi cần hiển thị ra và chờ 1s sau mỗi lần gửi để trỏ đến đầu dòng tiếp theo để gủi tiếp chuỗi tiếp theo
+<img width="340" height="556" alt="image" src="https://github.com/user-attachments/assets/4f4b6ae6-3812-40c8-9010-9cb826976d7b" />
 
 **C. KẾT LUẬN:**
 
 **1. Đánh giá kết quả đạt được:**
 - Hiển thị chuỗi khá chính xác
+- Bật/tắt led đúng như yêu cầu
 - Đôi khi bị delay do phần cứng với baud rate có thể chưa chính xác
 
 **2. Hướng cải tiến:**
