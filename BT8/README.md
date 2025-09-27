@@ -20,7 +20,7 @@
 
 **B. QUY TRÌNH THỰC HIỆN:**
 
-***Nhóm em quy ước 0-3.3V tương ứng với số mức trong ADC (12 bit) là:**
+_***Nhóm em quy ước 0-3.3V tương ứng với số mức trong ADC (12 bit) là:**_
 
   - 0-4095 mức (ADC từ biến trở nằm trong khoảng này, giá trị max đo được là 4042 ~ 98.71 độ C)
 
