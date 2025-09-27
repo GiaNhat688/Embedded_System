@@ -1,6 +1,4 @@
-**BÀI THỰC HÀNH SỐ 8**
-
-_**CHUYỂN ĐỔI ADC**_
+**BÀI THỰC HÀNH SỐ 8: CHUYỂN ĐỔI ADC**
 
 **ĐỌC VÀ CHUYỂN ĐỔI TÍN HIỆU ANALOG SANG DẠNG SỐ**
 
@@ -16,6 +14,9 @@ _**CHUYỂN ĐỔI ADC**_
 **2. Phần mềm:**
 - KeilC
 - Hercules
+
+**3. Kết quả mong đợi:**
+- Hiển thị được chính xác ADC của biến trở và nhiệt độ tương ứng
 
 **B. QUY TRÌNH THỰC HIỆN:**
 
