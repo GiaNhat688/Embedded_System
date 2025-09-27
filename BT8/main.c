@@ -15,8 +15,7 @@ void gpio_config_PA1(){
 	RCC->APB2ENR |= 1<<2;
 	
 	GPIOA->CRL &= ~(0xF<<4);
-	GPIOA->ODR |= 1<<1;
-	GPIOA->CRL |= 0x8<<4;
+	GPIOA->CRL |= 0x0<<4;
 }
 
 void usart1_config_PA9_PA10(){
@@ -62,7 +61,9 @@ void adc1_config(){
 	
 	ADC1->CR2 |= 1<<0;
 	ADC1->SMPR2 |= 7<<3; 
+	
 	delay_us(2);
+	
 	ADC1->SQR3 |= 1<<0; 
 	ADC1->CR2 |= 1<<0;
 	while(!(ADC1->SR & (1<<1)));
@@ -90,6 +91,6 @@ int main(){
 		sprintf(buff, "ADC = %d, TMP = %.2f\r\n", adc, tmp);
 		
 		usart1_sendstring(buff);
-		delay_us(800); //1s
+		delay_us(800); 
 	}
 }
