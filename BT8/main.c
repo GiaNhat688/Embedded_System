@@ -58,6 +58,7 @@ void usart1_sendstring(const char *str){
 
 void adc1_config(){
 	RCC->APB2ENR |= 1<<9;
+	RCC->CFGR |= (2<<14);
 	
 	ADC1->CR2 |= 1<<0;
 	ADC1->SMPR2 |= 7<<3; 
