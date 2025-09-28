@@ -35,7 +35,7 @@ _***Nhóm em quy ước 0-3.3V tương ứng với số mức trong ADC (12 bit)
 
 **1. Khai báo trước các nguyên mẫu hàm (phần này chủ yếu để kiểm soát code dễ dàng hơn):**
 
-<img width="356" height="209" alt="image" src="https://github.com/user-attachments/assets/0f3aee67-0ae2-4803-b567-6d6353bf4829" />
+<img width="246" height="119" alt="image" src="https://github.com/user-attachments/assets/75baccf9-a0bf-4e69-aa37-81b6ebb52da7" />
 
 - Hàm cấu hình GPIOA chân PA1 để nhận tín hiệu vào từ biến trở
 - Hàm cấu hình USART1 với chân PA9-TX và PA10-RX để hiển thị dữ liệu lên terminal
