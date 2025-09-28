@@ -1,0 +1,9 @@
+-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c
+-fno-rtti -funsigned-char
+-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality 
+-I./RTE/Device/STM32F103C8
+-I./RTE/_Target_1
+-IC:/Users/Admin/Desktop/Nhat/THCS/KeilC/ARM/CMSIS/6.2.0/CMSIS/Core/Include
+-IC:/Users/Admin/Desktop/Nhat/THCS/KeilC/Keil/STM32F1xx_DFP/2.4.1/Device/Include
+-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_
+-o ./objects/main.o -MD "main.c"
