@@ -1,3 +1,4 @@
 **ẢNH CHẠY MÔ PHỎNG TRÊN PROTEUS8 (HOẠT ĐỘNG)**
 
-<img width="1015" height="530" alt="image" src="https://github.com/user-attachments/assets/36b7eeec-0a00-49f1-9ac7-0d428f700bb9" />
+<img width="1096" height="531" alt="image" src="https://github.com/user-attachments/assets/fec2be57-0fa9-4d9b-af65-5b838f76f33b" />
+
