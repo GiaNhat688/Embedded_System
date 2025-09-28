@@ -98,10 +98,7 @@ _***Nhóm em quy ước 0-3.3V tương ứng với số mức trong ADC (12 bit)
 - Gọi các hàm đã tạo từ trước
 - Khởi tạo mảng chứa khoảng 32 ký tự (phù hợp cho chuỗi dài hiển thị ADC và Voltage tương ứng)
 - Vòng lặp:
-- r43
-		- 342423
-  
-		- Lấy giá trị từ thanh ghi DR
+- Lấy giá trị từ thanh ghi DR
   
 		- Chuyển đổi sang mức điện áp tương ứng với số mức ADC như công thức ở trên
   
