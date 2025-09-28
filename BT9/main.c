@@ -96,6 +96,8 @@ void DMA1_Channel1_Config(){
 	DMA1_Channel1->CCR |= 1<<8;
 	DMA1_Channel1->CCR |= 1<<10;
 	
+	DMA1_Channel1->CCR |= (1<<5);
+	
 	DMA1_Channel1->CCR |= 1<<1;
 	DMA1_Channel1->CCR |= 1<<0;
 	
