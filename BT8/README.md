@@ -22,7 +22,7 @@
 
 _***Nhóm em quy ước 0-3.3V tương ứng với số mức trong ADC (12 bit) là: 0-4095**_
 
-<img width="217" height="79" alt="image" src="https://github.com/user-attachments/assets/858ad484-8e55-456a-b5b2-19cec485c966" />
+  <img width="217" height="79" alt="image" src="https://github.com/user-attachments/assets/858ad484-8e55-456a-b5b2-19cec485c966" />
 
 - Giá trị ADC cao nhất đo được là 4052 tương ứng với 3.27V
 - Vậy công thức quy đổi là:
