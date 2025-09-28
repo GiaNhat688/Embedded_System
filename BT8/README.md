@@ -112,4 +112,4 @@ _***Nhóm em quy ước 0-3.3V tương ứng với số mức trong ADC (12 bit)
 - Có thể dùng cảm biến ngoài để quản lý dễ dàng hơn
 - Có thể tạo delay non-blocking bằng ngắt ngoài nhưng phức tạp hơn
 
-**_Video mô phỏng: [ADC_Pot_Voltage][https://drive.google.com/drive/u/0/folders/1yncYx0cI1FtgzgAOeFypJnUEJCMZ6Jc0](url)_**
+**_Video mô phỏng: [ADC_Pot_Voltage](https://drive.google.com/drive/u/0/folders/1yncYx0cI1FtgzgAOeFypJnUEJCMZ6Jc0](url))_**
