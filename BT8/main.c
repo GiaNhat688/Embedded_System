@@ -66,7 +66,6 @@ void adc1_config(){
 	
 	ADC1->SQR3 |= 1<<0; 
 	ADC1->CR2 |= 1<<0;
-	while(!(ADC1->SR & (1<<1)));
 }
 
 uint32_t adc1_read(){
