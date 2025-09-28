@@ -20,14 +20,16 @@
 
 **B. QUY TRÌNH THỰC HIỆN:**
 
-_***Nhóm em quy ước 0-3.3V tương ứng với số mức trong ADC (12 bit) là:**_
+_***Nhóm em quy ước 0-3.3V tương ứng với số mức trong ADC (12 bit) là: 0-4095**_
 
-  - 0-4095 mức (ADC từ biến trở nằm trong khoảng này, giá trị max đo được là 4042 ~ 98.71 độ C)
+<img width="217" height="79" alt="image" src="https://github.com/user-attachments/assets/858ad484-8e55-456a-b5b2-19cec485c966" />
 
-    <img width="192" height="117" alt="image" src="https://github.com/user-attachments/assets/4ea0b50b-826e-44bf-9791-fc6d77c3b82f" />
-
-  - Giá trị nhiệt độ tương ứng là 3.3V ~ 100 độ C thì 1V ~ 30.30 độ C
-  - Mức 0 là 0V -> Mức 4095 là 3.3V -> 1V ~ 1240.90 -> 3.25V ~ 4042 -> 3.25 x 30.30 ~ 98.70 độ C (gần đúng do sai số)
+- Giá trị ADC cao nhất đo được là 4052 tương ứng với 3.27V
+- Vậy công thức quy đổi là:
+        Vout = (ADC_value * Vref) / 4095
+    - ADC_value: Được đo từ biến trở
+    - Vref: Điện áp tham chiếu, ở đây là 3.3V
+    - 4095: Số mức tối đa đạt được (2 ^ 12 = 4096 -> 4096 - 1 = 4095)
 
 **1. Khai báo trước các nguyên mẫu hàm (phần này chủ yếu để kiểm soát code dễ dàng hơn):**
 
@@ -89,22 +91,22 @@ _***Nhóm em quy ước 0-3.3V tương ứng với số mức trong ADC (12 bit)
 
 **5. Thực thi chương trình:**
 
-<img width="503" height="324" alt="image" src="https://github.com/user-attachments/assets/91788a38-c619-447f-82f5-41f5c3bcad5b" />
+<img width="505" height="315" alt="image" src="https://github.com/user-attachments/assets/6291091d-1e60-4dcb-8c61-b164fc8f3bd7" />
 
 - Gọi các hàm đã tạo từ trước
-- Khởi tạo mảng chứa khoảng 32 ký tự (phù hợp cho chuỗi dài hiển thị ADC và TMP tương ứng)
+- Khởi tạo mảng chứa khoảng 32 ký tự (phù hợp cho chuỗi dài hiển thị ADC và Voltage tương ứng)
 - Vòng lặp:
       - Lấy giá trị từ thanh ghi DR
       - Chuyển đổi sang mức điện áp tương ứng với số mức ADC như công thức ở trên 
-      - In chuỗi theo thứ tự ADC (int) trước rồi đến TMP (float)
+      - In chuỗi theo thứ tự ADC (int) trước rồi đến Voltage (float)
       - Dùng USART để gửi chuỗi trên lên terminal
-      - Delay 800us tạo độ trễ
+      - Delay 1ms tạo độ trễ
 
 **C. KẾT LUẬN:**
 
 **1. Đánh giá kết quả nhận được:**
 
-- Hiển thị khá chính xác ADC và chuyển đổi sang TMP tương ứng
+- Hiển thị khá chính xác ADC và chuyển đổi sang Voltage tương ứng
 - Do hạn chế về phần cứng nên có thể vẫn đang còn nhiều sai số
 
 **2. Hướng cải tiến:**
