@@ -94,4 +94,4 @@
 
 - Có thể dùng cảm biến để hiển thị thêm dữ liệu
 
-_**Video bài làm: [ADC_DMA_RAM](https://drive.google.com/drive/u/0/folders/1mXfYbNs5Pq4NazddWMAc8v4Mdh2BsUIZ)**_
+_**Video bài làm: [ADC_DMA_RAM](https://drive.google.com/drive/u/0/folders/1WCW3vh2iNZNFQH0pKtyLxXILPe3-gD2d)**_
