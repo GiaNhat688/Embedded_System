@@ -35,7 +35,7 @@ _***Nhóm em quy ước 0-3.3V tương ứng với số mức trong ADC (12 bit)
 
 **1. Khai báo trước các nguyên mẫu hàm (phần này chủ yếu để kiểm soát code dễ dàng hơn):**
 
-<img width="246" height="119" alt="image" src="https://github.com/user-attachments/assets/75baccf9-a0bf-4e69-aa37-81b6ebb52da7" />
+<img width="330" height="207" alt="image" src="https://github.com/user-attachments/assets/01e9197e-8c34-4375-ac3f-2f12a5d948fa" />
 
 - Hàm cấu hình GPIOA chân PA1 để nhận tín hiệu vào từ biến trở
 - Hàm cấu hình USART1 với chân PA9-TX và PA10-RX để hiển thị dữ liệu lên terminal
@@ -46,7 +46,7 @@ _***Nhóm em quy ước 0-3.3V tương ứng với số mức trong ADC (12 bit)
 
 **2.1. Cấu hình chi tiết GPIOA với chân PA1:**
 
-<img width="227" height="124" alt="image" src="https://github.com/user-attachments/assets/0dedd462-074d-45c3-991e-35152abd1b56" />
+<img width="246" height="119" alt="image" src="https://github.com/user-attachments/assets/e3c202cc-d7c6-4826-ad3d-56198a1b6523" />
 
 - Cấu hình ở chế độ Analog mode
 
