@@ -86,11 +86,11 @@ int main(){
 	while(1){
 		uint32_t adc = adc1_read();
 		
-		float tmp = (adc * 100.0f) / 4095.0f;
+		float volt = (adc * 3.3f)/ 4095.0f;
 		
-		sprintf(buff, "ADC = %d, TMP = %.2f\r\n", adc, tmp);
+		sprintf(buff, "ADC = %d, Voltage = %.2f\r\n", adc, volt);
 		
 		usart1_sendstring(buff);
-		delay_us(800); 
+		delay_us(1000); 
 	}
 }
