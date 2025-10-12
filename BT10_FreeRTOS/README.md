@@ -1,9 +1,17 @@
 **BÀI THỰC HÀNH 10**
 
+---
+
 **KHỞI TẠO TASK SỬ DỤNG FREERTOS**
 
-**CHƯƠNG TRÌNH SỬ DỤNG STM32F103C8T6 KẾT HỢP VỚI FREERTOS ĐỂ QUẢN LÝ CÁC TASK THỰC HIỆN NHẤP NHÁY LED VỚI 3 CHÂN TƯƠNG ỨNG VỚI 3 TẦN SỐ KHÁC NHAU LẦN LƯỢT LÀ 3HZ, 10HZ, 25HZ**
-**---**
+---
+
+**CHƯƠNG TRÌNH SỬ DỤNG STM32F103C8T6 KẾT HỢP VỚI FREERTOS ĐỂ QUẢN LÝ CÁC TASK THỰC HIỆN NHẤP NHÁY LED VỚI 3 CHÂN TƯƠNG ỨNG VỚI 3 TẦN SỐ**
+
+**KHÁC NHAU LẦN LƯỢT LÀ 3HZ, 10HZ, 25HZ**
+
+---
+
 **I. SỬ DỤNG 3 HÀM ĐỘC LẬP CHO 3 TÁC VỤ:**
 
 **A. QUY TRÌNH THỰC HIỆN**
@@ -51,6 +59,8 @@ Công thức để tính thời gian thực thi chia làm 2 giai đoạn:
 **B. KẾT LUẬN:**
 - Mỗi LED được điều khiển bởi 1 task riêng, dùng FreeRTOS để chạy song song và vTaskDelay để tạo tần số nháy khác nhau.
 - Thời gian và tốc độ của led khá chính xác tuy nhiên vẫn cần cải thiện bằng các nguồn khác.
+
+---
 
 **II. SỬ DỤNG 1 HÀM TÁC VỤ DUY NHẤT VÀ TRUYỀN VÀO THAM SỐ ĐỂ THAY ĐỔI CHÂN NHÁY LED, TẦN SỐ NHÁY:**
 
