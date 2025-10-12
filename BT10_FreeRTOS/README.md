@@ -46,5 +46,6 @@ Công thức để tính thời gian thực thi chia làm 2 giai đoạn:
 
 - Bắt đầu scheduler FreeRTOS với vTaskStartScheduler().
 
-**B. KẾT LUẬN: **
+**B. KẾT LUẬN:**
 - Mỗi LED được điều khiển bởi 1 task riêng, dùng FreeRTOS để chạy song song và vTaskDelay để tạo tần số nháy khác nhau.
+- Thời gian và tốc độ của led khá chính xác tuy nhiên vẫn cần cải thiện bằng các nguồn khác.
