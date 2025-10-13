@@ -30,8 +30,8 @@ int main(void){
     GPIO_Init();
 
     static LED_Param_t led1 = { .pin = (1<<1), .delay = pdMS_TO_TICKS(167) };
-    static LED_Param_t led2 = { .pin = (1<<2), .delay = pdMS_TO_TICKS(167) };
-    static LED_Param_t led3 = { .pin = (1<<3), .delay = pdMS_TO_TICKS(167) };
+    static LED_Param_t led2 = { .pin = (1<<2), .delay = pdMS_TO_TICKS(50) };
+    static LED_Param_t led3 = { .pin = (1<<3), .delay = pdMS_TO_TICKS(20) };
 
     xTaskCreate(LED_Task,"LED_Blink_3Hz",128,&led1,tskIDLE_PRIORITY+1,NULL);
     xTaskCreate(LED_Task,"LED_Blink_10Hz",128,&led2,tskIDLE_PRIORITY+1,NULL);
