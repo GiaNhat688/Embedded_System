@@ -3,7 +3,7 @@
 #include "task.h"
 
 void GPIO_Init(void){
-    RCC->APB2ENR |= RCC_APB2ENR_IOPAEN;
+    RCC->APB2ENR |= 1<<2;
     GPIOA->CRL &= ~((0xF<<4)|(0xF<<8)|(0xF<<12));
     GPIOA->CRL |=  (0x3<<4)|(0x3<<8)|(0x3<<12); // Output 50MHz
     GPIOA->ODR &= ~((1<<1)|(1<<2)|(1<<3));
