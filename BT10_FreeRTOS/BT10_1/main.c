@@ -11,31 +11,40 @@ void GPIO_Init(void){
 
 //pa1
 void Task01(void *pvParameters){
+    TickType_t xLastWakeTime = xTaskGetTickCount();
+    const TickType_t xFrequency = pdMS_TO_TICKS(167); // 3Hz
+
     for(;;){
         GPIOA->ODR ^= (1<<1);
-        vTaskDelay(pdMS_TO_TICKS(167)); // 3Hz
+        vTaskDelayUntil(&xLastWakeTime, xFrequency);
     }
 }
 
 //pa2
 void Task02(void *pvParameters){
+    TickType_t xLastWakeTime = xTaskGetTickCount();
+    const TickType_t xFrequency = pdMS_TO_TICKS(50); // 10Hz
+
     for(;;){
         GPIOA->ODR ^= (1<<2);
-        vTaskDelay(pdMS_TO_TICKS(50)); // 10Hz
+        vTaskDelayUntil(&xLastWakeTime, xFrequency);
     }
 }
 
 //pa3
 void Task03(void *pvParameters){
+    TickType_t xLastWakeTime = xTaskGetTickCount();
+    const TickType_t xFrequency = pdMS_TO_TICKS(20); // 25Hz
+
     for(;;){
-        GPIOA->ODR ^= (1<<3); 
-        vTaskDelay(pdMS_TO_TICKS(20)); // 25Hz
+        GPIOA->ODR ^= (1<<3);
+        vTaskDelayUntil(&xLastWakeTime, xFrequency);
     }
 }
 
 int main(void){
-    RCC->CR |= RCC_CR_HSION;
-    while(!(RCC->CR & RCC_CR_HSIRDY));
+    RCC->CR |= 1<<0;
+    while(!(RCC->CR & (1<<1)));
     RCC->CFGR = 0;
 
     GPIO_Init();
@@ -48,4 +57,3 @@ int main(void){
 
     while(1);
 }
-
