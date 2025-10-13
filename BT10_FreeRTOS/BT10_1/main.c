@@ -9,24 +9,27 @@ void GPIO_Init(void){
     GPIOA->ODR &= ~((1<<1)|(1<<2)|(1<<3));
 }
 
+//pa1
 void Task01(void *pvParameters){
     for(;;){
-        GPIOA->ODR ^= (1<<1); // Toggle PA1
-        vTaskDelay(167 / portTICK_PERIOD_MS); // 3Hz
+        GPIOA->ODR ^= (1<<1);
+        vTaskDelay(pdMS_TO_TICKS(167)); // 3Hz
     }
 }
 
+//pa2
 void Task02(void *pvParameters){
     for(;;){
-        GPIOA->ODR ^= (1<<2); // Toggle PA2
-        vTaskDelay(50 / portTICK_PERIOD_MS); // 10Hz
+        GPIOA->ODR ^= (1<<2);
+        vTaskDelay(pdMS_TO_TICKS(50)); // 10Hz
     }
 }
 
+//pa3
 void Task03(void *pvParameters){
     for(;;){
-        GPIOA->ODR ^= (1<<3); // Toggle PA3
-        vTaskDelay(20 / portTICK_PERIOD_MS); // 25Hz
+        GPIOA->ODR ^= (1<<3); 
+        vTaskDelay(pdMS_TO_TICKS(20)); // 25Hz
     }
 }
 
@@ -37,9 +40,9 @@ int main(void){
 
     GPIO_Init();
 
-    xTaskCreate(Task01,"Task01",128,NULL,tskIDLE_PRIORITY+1,NULL);
-    xTaskCreate(Task02,"Task02",128,NULL,tskIDLE_PRIORITY+1,NULL);
-    xTaskCreate(Task03,"Task03",128,NULL,tskIDLE_PRIORITY+1,NULL);
+    xTaskCreate(Task01,"Led_Blink_3Hz",128,NULL,tskIDLE_PRIORITY+1,NULL);
+    xTaskCreate(Task02,"Led_Blink_10Hz",128,NULL,tskIDLE_PRIORITY+1,NULL);
+    xTaskCreate(Task03,"Led_Blink_25Hz",128,NULL,tskIDLE_PRIORITY+1,NULL);
 
     vTaskStartScheduler();
 
