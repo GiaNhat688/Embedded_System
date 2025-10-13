@@ -33,9 +33,9 @@ int main(void){
     static LED_Param_t led2 = { .pin = (1<<2), .delay = 50 / portTICK_PERIOD_MS };
     static LED_Param_t led3 = { .pin = (1<<3), .delay = 20 / portTICK_PERIOD_MS };
 
-    xTaskCreate(LED_Task,"LED1",128,&led1,tskIDLE_PRIORITY+1,NULL);
-    xTaskCreate(LED_Task,"LED2",128,&led2,tskIDLE_PRIORITY+1,NULL);
-    xTaskCreate(LED_Task,"LED3",128,&led3,tskIDLE_PRIORITY+1,NULL);
+    xTaskCreate(LED_Task,"LED_Blink_3Hz",128,&led1,tskIDLE_PRIORITY+1,NULL);
+    xTaskCreate(LED_Task,"LED_Blink_10Hz",128,&led2,tskIDLE_PRIORITY+1,NULL);
+    xTaskCreate(LED_Task,"LED_Blink_25Hz",128,&led3,tskIDLE_PRIORITY+1,NULL);
 
     vTaskStartScheduler();
 
