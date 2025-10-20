@@ -15,9 +15,9 @@ void vTask_Generator(void *pvParameters);
 QueueHandle_t xQueue;
 
 void GPIO_Config(void) {
-    RCC->APB2ENR |= RCC_APB2ENR_IOPAEN;
-    GPIOA->CRL &= ~(0xF << (5 * 4));
-    GPIOA->CRL |= (0x1 << (5 * 4));
+    RCC->APB2ENR |= 1<<2;
+    GPIOA->CRL &= ~(0xF << 20);
+    GPIOA->CRL |= (0x1 << 20);
 }
 
 void vTask_LED(void *pvParameters) {
@@ -56,7 +56,7 @@ int main(void) {
     GPIO_Config();
     xQueue = xQueueCreate(5, sizeof(PWM_Params_t));
     if (xQueue == NULL)
-        while(1);
+    while(1);
     xTaskCreate(vTask_LED, "LED", 128, NULL, 1, NULL);
     xTaskCreate(vTask_Generator, "Gen", 128, NULL, 1, NULL);
     vTaskStartScheduler();
