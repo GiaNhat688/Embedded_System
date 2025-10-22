@@ -2,7 +2,11 @@
 
 **NGĂN CHẶN VIỆC TRUY CẬP ĐỒNG THỜI VÀO TÀI NGUYÊN DÙNG CHUNG**
 
+---
+
 **CHƯƠNG TRÌNH SỬ DỤNG FREERTOS VÀ CƠ CHẾ MUTEX VỚI BINARY SEMAPHORE ĐỂ XỬ LÝ CÁC CHUỖI KÝ TỰ CÙNG MỨC ƯU TIÊN**
+
+---
 
 **A. QUY TRÌNH THỰC HIỆN:**
 
@@ -89,10 +93,14 @@
   
 - Gọi hàm khởi động bộ lập lịch để cho phép CPU bắt đầu chạy các task song song
 
+---
+
 **B. KẾT LUẬN:**
 - Kết quả in ra terminal tương đối chính xác
   
 - Có những lần khi mới reset thì hiển thị các ký tự rác có thể do phần cứng hoặc baudrate
+
+---
 
 **C. HƯỚNG PHÁT TRIỂN:**
 - Có thể time out trong khi SemaphoreTake Mutex để không bị kẹt mãi khi task trước bị treo
@@ -100,5 +108,7 @@
 - Có thể dùng mức ưu tiên cao hơn cho gọn gàng
   
 - Dùng queue để tránh bị nhiều task cùng lúc sẽ ổn định và dễ mở rộng hơn
+
+---
 
 **_Link demo: [FreeRTOS_Mutex_Binary Semaphore](https://drive.google.com/file/d/1AAj6km06vSo-W4M_2HaHFhAce07KLJQG/view?usp=drive_link)_**
