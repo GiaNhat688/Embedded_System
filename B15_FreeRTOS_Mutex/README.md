@@ -64,8 +64,8 @@
 <img width="428" height="325" alt="image" src="https://github.com/user-attachments/assets/8b42013c-5fe8-4a33-b925-df26e66b08a6" />
 
 - Vấn đề là task 3 và task 4 cùng mức ưu tiên và khi hiển thị lên terminal thì task 4 lại hiển thị trước
-  
-  --> Giải pháp: Chỉ hiển thị task 4 khi task 3 give Binary Semaphore cho task 4
+
+ --> Giải pháp: Chỉ hiển thị task 4 khi task 3 give Binary Semaphore cho task 4
 
 - Gửi chuỗi cần hiển thị trước tiên và phải đặt lệnh xSemaphoreGive để được ưu tiên trước
   
