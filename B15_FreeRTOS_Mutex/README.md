@@ -65,7 +65,7 @@
 
 - Vấn đề là task 3 và task 4 cùng mức ưu tiên và khi hiển thị lên terminal thì task 4 lại hiển thị trước
   
---> Giải pháp: Chỉ hiển thị task 4 khi task 3 give Binary Semaphore cho task 4
+  --> Giải pháp: Chỉ hiển thị task 4 khi task 3 give Binary Semaphore cho task 4
 
 - Gửi chuỗi cần hiển thị trước tiên và phải đặt lệnh xSemaphoreGive để được ưu tiên trước
   
@@ -101,4 +101,4 @@
   
 - Dùng queue để tránh bị nhiều task cùng lúc sẽ ổn định và dễ mở rộng hơn
 
-_Link demo: [FreeRTOS_Mutex_Binary Semaphore](https://drive.google.com/file/d/1AAj6km06vSo-W4M_2HaHFhAce07KLJQG/view?usp=drive_link)_
+**_Link demo: [FreeRTOS_Mutex_Binary Semaphore](https://drive.google.com/file/d/1AAj6km06vSo-W4M_2HaHFhAce07KLJQG/view?usp=drive_link)_**
