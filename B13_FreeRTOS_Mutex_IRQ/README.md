@@ -1,6 +1,10 @@
-**BÀI THỰC HÀNH SỐ 15**
+**BÀI THỰC HÀNH SỐ 13**
 
-**NGĂN CHẶN VIỆC TRUY CẬP ĐỒNG THỜI VÀO TÀI NGUYÊN DÙNG CHUNG**
+---
+
+**BÀI 2 VÀ BÀI 3**
+
+**HIỂN THỊ LỖI VÀ DÙNG MUTEX ĐỂ HIỂN THỊ ĐÚNG CHUỖI THEO YÊU CẦU**
 
 ---
 
