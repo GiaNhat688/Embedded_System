@@ -96,6 +96,9 @@
 ---
 
 **B. KẾT LUẬN:**
+
+<img width="213" height="371" alt="image" src="https://github.com/user-attachments/assets/c61dc834-43b6-40c4-b51a-5ea700038cae" />
+
 - Kết quả in ra terminal tương đối chính xác
   
 - Có những lần khi mới reset thì hiển thị các ký tự rác có thể do phần cứng hoặc baudrate
