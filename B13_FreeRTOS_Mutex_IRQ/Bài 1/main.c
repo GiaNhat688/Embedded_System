@@ -8,7 +8,7 @@ SemaphoreHandle_t xInterruptSemaphore;
 volatile bool isOn = false;
 #define DEBOUNCE_TIME_MS 200
 
-void Hardware_Init(void) {
+void Hardware_Init(void){
     RCC->APB2ENR |= (1 << 0) | (1 << 2);
 
     GPIOA->CRL &= ~(0xF << 0);
@@ -29,51 +29,55 @@ void Hardware_Init(void) {
     NVIC_EnableIRQ(EXTI0_IRQn);
 }
 
-void vBlinkTask(void *pvParameters) {
-    for (;;) {
+void vBlinkTask(void *pvParameters){
+    for(;;){
         GPIOA->ODR ^= (1 << 5);
         vTaskDelay(pdMS_TO_TICKS(1000));
     }
 }
 
-void vInterruptTask(void *pvParameters) {
-    for (;;) {
-        if (xSemaphoreTake(xInterruptSemaphore, portMAX_DELAY) == pdTRUE) {
+void vInterruptTask(void *pvParameters){
+    for(;;){
+        if(xSemaphoreTake(xInterruptSemaphore, portMAX_DELAY) == pdTRUE){
             isOn = !isOn;
-            if (isOn) {
+            if(isOn){
                 GPIOA->BSRR |= (1 << 1);
-            } else {
+            }
+						else{
                 GPIOA->BRR = (1 << 1);
             }
         }
     }
 }
 
-void EXTI0_IRQHandler(void) {
+void EXTI0_IRQHandler(void){
     static TickType_t lastTime = 0;
     TickType_t currentTime = xTaskGetTickCountFromISR();
 
-    if (EXTI->PR & (1 << 0)) {
+    if(EXTI->PR & (1 << 0)){
         EXTI->PR |= (1 << 0);
     }
 
-    if ((currentTime - lastTime) > pdMS_TO_TICKS(DEBOUNCE_TIME_MS)) {
+    if((currentTime - lastTime) > pdMS_TO_TICKS(DEBOUNCE_TIME_MS)){
         lastTime = currentTime;
+			
         BaseType_t xHigherPriorityTaskWoken = pdFALSE;
+			
         xSemaphoreGiveFromISR(xInterruptSemaphore, &xHigherPriorityTaskWoken);
+			
         portYIELD_FROM_ISR(xHigherPriorityTaskWoken);
     }
 }
 
-int main(void) {
+int main(void){
     Hardware_Init();
     xInterruptSemaphore = xSemaphoreCreateBinary();
 
-    if (xInterruptSemaphore != NULL) {
+    if(xInterruptSemaphore != NULL){
         xTaskCreate(vBlinkTask, "Blink", 128, NULL, 1, NULL);
         xTaskCreate(vInterruptTask, "Interrupt", 128, NULL, 2, NULL);
         vTaskStartScheduler();
     }
-
-    for (;;);
+		
+    for(;;);
 }
