@@ -1,8 +1,12 @@
 **BÀI THỰC HÀNH SỐ 13**
 
+---
+
 **BÀI 1**
 
 **VIẾT CHƯƠNG TRÌNH GỒM 2 TASK: 1 TASK BLINK LED VÀ 1 TASK BẬT/TẮT LED CẢNH BÁO KHI CÓ NGẮT NGOÀI, TRONG ĐÓ TASK CẢNH BÁO ĐƯỢC KÍCH HOẠT NGAY SAU KHI HÀM NGẮT THỰC THI VÀ Ở TRẠNG THÁI BLOCK KHI CHƯA NHẤN NÚT**
+
+---
 
 **A. QUY TRÌNH THỰC HIỆN:**
 
@@ -90,16 +94,22 @@
     - Tạo Task 2 là vInterruptTask với độ ưu tiên là 2, stack length là 128 word, không truyền tham số và không handle task.
     --> Bộ lập lịch bắt đầu thực thi task (FreeRTOS sẽ điều khiển CPU).
 
+---
+
 **B. KẾT LUẬN:**
 
 - Chương trình chạy tương đối chính xác.
 
 - Chương trình hoạt động ổn định, led nháy định kỳ và led cảnh báo bật/tắt ngay sau khi nhấn nút. Cơ chế chống dội nút giúp tránh nhiễu tín hiệu, tuy nhiên chương trình vẫn còn hạn chế khi xử lý trường hợp nhấn nút quá nhanh hoặc xuất hiện nhiều ngắt liên tiếp.
 
+---
+
 **C. HƯỚNG PHÁT TRIỂN:**
 
 - Chương trình có thể được mở rộng bằng cách thêm nhiều nút và led để xử lý nhiều sự kiện ngắt khác nhau, tích hợp cơ chế lọc nhiễu bằng phần cứng, hoặc dùng hàng đợi (queue) để truyền dữ liệu từ ngắt đến các task xử lý phức tạp hơn.
 
 - Ngoài ra, có thể bổ sung tính năng điều khiển thời gian bật/tắt led và ghi log sự kiện để nâng cao độ tin cậy.
+
+---
 
 _**Link demo: [FreeRTOS_IRQ](https://drive.google.com/file/d/112dLYg-iWgX8-oJDP7mTPcP6xbPlP00W/view?usp=drive_link)**_
