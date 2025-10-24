@@ -14,7 +14,7 @@
 
 <img width="185" height="83" alt="image" src="https://github.com/user-attachments/assets/7cb1a625-4126-4463-b8b6-4c8f2b287d99" />
 
-- mstm32f10x.h: Cung cấp các định nghĩa cho thanh ghi phần cứng của chip STM32 (ví dụ: GPIOA, RCC).
+- stm32f10x.h: Cung cấp các định nghĩa cho thanh ghi phần cứng của chip STM32 (ví dụ: GPIOA, RCC).
 
 - FreeRTOS.h: Chứa các định nghĩa cốt lõi của FreeRTOS.
 
