@@ -1,5 +1,7 @@
 **BÀI THỰC HÀNH 14**
 
+---
+
 **BÀI 2**
 
 **MỤC TIÊU: SO SÁNH DÒNG TIÊU THỤ CỦA 2 CHẾ ĐỘ LÀ SLEEP VÀ DELAY(SYSTICK TIMER) KHI THỰC HIỆN CÙNG MỘT CHỨC NĂNG**
