@@ -62,4 +62,12 @@
 
 ---
 
+**B. KẾT LUẬN:**
+
+- Chương trình cho ra kết quả chính xác
+  
+- Đôi lúc vẫn bị chậm về mặt thời gian do phần cấu hình phần cứng timer
+
+---
+
 _**Link video demo: [BTH14_FreeRTOS_B1_EventGroup](https://drive.google.com/file/d/1VQ7KeW9i42DnRqZg7gqha6Fym0rDzRv3/view?usp=drive_link)**_
