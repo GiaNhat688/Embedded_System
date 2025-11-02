@@ -1,6 +1,8 @@
 **BÀI THỰC HÀNH SỐ 14**
 
-**SỬ DỤNG EVENTGROUP TRONG FREERTOS ĐỂ QUẢN LÝ VÀ ĐIỀU PHỐI CÁC TÁC VỤ ĐƠN HOẶC ĐỒNG THỜI**
+---
+
+**BÀI 1: SỬ DỤNG EVENTGROUP TRONG FREERTOS ĐỂ QUẢN LÝ VÀ ĐIỀU PHỐI CÁC TÁC VỤ ĐƠN HOẶC ĐỒNG THỜI**
 
 ---
 
